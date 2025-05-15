@@ -2,35 +2,49 @@
 import java.util.ArrayList;
 
 class Member{
-    private String nome;
+    private String name;
     private int id;
-    private String email;
+    private String address;
     private static userID =0;
-    private ArrayList<Livro> historicoLeitura;
+    
+    private ArrayList<Book> readBooks;
+    private ArrayList<Book> recommendedBooks;
 
-    public Membro(int id){
+    public Membro(String name, String address, String birthdate, int id){
         this.id = userID++;
-        this.historicoLeitura = new ArrayList<>();
+        this.readBooks = new ArrayList<>();
+        this.recommendedBooks = new ArrayList<>();
+        this.name = name;
+        this.address = address;
+        this.birthdate = birthdate;
     }
 
-    public getNome(){
-        return nome;
+    public getName(){
+        return name;
     }
-
-    public setNome(String nome){
-        this.nome = nome;
-    }
-
     public getId(int id){
         return id;
     }
-
-    public getEmail (String email){
-        return email;
+    public getAddress (String address){
+        return address;
+    }
+    public getBirthdate (String birthdate){
+        return birthdate;
+    }
+    public ArrayList<Book> getReadBooks(){ 
+        return readBooks;
+    }
+    public ArrayList<Book> getRecommendedBooks(){ 
+        return recommendedBooks; 
     }
 
-    public setEmail (String email){
-        this.email = email;
+    public void setAddress (String address){
+        this.address = address;
     }
-
+    public void setName(String name){
+        this.name = name;
+    }
+    public void setBirthdate(String birthdate){
+        this.birthdate = birthdate;
+    }
 }
