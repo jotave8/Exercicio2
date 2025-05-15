@@ -3,16 +3,16 @@
 Modelagem do problema:
 
 - ReadingClub
-  - Set<Book>
-  - Set<Member>
-  - Set<Meeting>
+  - Set Book 
+  - Set Member
+  - Set Meeting 
   - int numberOfMembers()
   - Book mostRecommendedBook()
 - Member
   - Name
   - Address
   - BirthDate
-  - Set<Book>
+  - Set Book 
 - Book
   - title
   - author
@@ -23,7 +23,7 @@ Modelagem do problema:
 - Meeting
   - date
   - theme
-  - Set<Member>
-  - Set<Book>
+  - Set Member 
+  - Set Book
   - void registerMember()
   - void addBook()
