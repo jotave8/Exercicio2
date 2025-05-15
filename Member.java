@@ -10,7 +10,7 @@ class Member{
     private ArrayList<Book> readBooks;
     private ArrayList<Book> recommendedBooks;
 
-    public Membro(String name, String address, String birthdate, int id){
+    public Membro(String name, String address, String birthdate){
         this.id = userID++;
         this.readBooks = new ArrayList<>();
         this.recommendedBooks = new ArrayList<>();
