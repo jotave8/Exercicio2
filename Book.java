@@ -16,7 +16,7 @@ class Book{
     }
 
     //getters
-    public String getTitle(){
+    public String getTitle(String title){
         return title;
     }
     public int getId(int id){

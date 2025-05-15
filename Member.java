@@ -19,7 +19,7 @@ class Member{
         this.birthdate = birthdate;
     }
 
-    public getName(){
+    public getName(String name){
         return name;
     }
     public getId(int id){
